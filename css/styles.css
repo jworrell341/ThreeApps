@@ -1,0 +1,134 @@
+/** //////////////////////////////////////
+// Author: Jason Worrell
+// Creation Date:  1-29-2015
+// Revised: 02/26/2015
+// Note: Short app to slide the front page
+// to reveal a dashboard or menu and three apps. 
+////////////////////////////////////// */
+html{
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none; 
+}
+
+body{
+  #background: lightgray;
+  font-size: 6rem; /*7rem;*/
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.stack{
+  position: absolute;
+  right: 0;
+  width: 100rem;
+  min-height: 100%;
+}
+
+
+#back{
+  z-index: 0;
+	padding-right: 1rem;
+  background: url(../images/blueBackground.jpg) center;
+	background-size: cover;
+}
+
+#app1{
+	padding-bottom: 4rem;
+	background: url(../images/notebook.png) no-repeat center;
+	background-size: contain;
+	margin-left: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px black;
+  width: 10rem;  
+}
+
+#app2{
+  padding-bottom: 2rem;
+	background: url(../images/earth.png) no-repeat center;
+	background-size: contain;
+	margin-left: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px black;
+  width: 10rem;  
+}
+
+#app3{
+  padding-bottom: 4rem;
+  background: url(../images/music-player.png) no-repeat center;
+  background-size: contain;
+  margin-left: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px black;
+  width: 10rem;  
+}
+
+.apps:hover{
+	box-shadow: 0.5rem 0.1rem 0.5rem white;
+	border-radius: 2rem;
+}
+
+#front{
+  z-index: 1;
+	width: 100rem;
+  padding-top: 1rem;
+  background: url(../images/RedBackground.jpg) no-repeat center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  /*=====================*/
+  -webkit-transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  transition: width 0.5s;   
+}
+
+
+
+#content{
+  margin: 0 auto;
+  #background: teal;
+  text-align: center;
+  min-height: 10rem;   
+}
+
+#menu{
+  width: 8.5rem;
+  padding-top: 7rem;
+  background: url(../images/menu.png) no-repeat center;
+  background-size: contain;
+  float: left;
+  margin-left: 2rem; 
+}
+
+#menu:hover{
+	box-shadow: 0.5rem 0.5rem 0.5rem white;
+	cursor: pointer;
+}
+
+#iframe{
+	width: 75rem;
+	min-height:40rem;
+	margin-left: 10rem;
+	border: none;
+	#display: none;
+}
+
+
+
+
+
+
+
+

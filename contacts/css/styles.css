@@ -1,0 +1,39 @@
+body{
+	font-family: sans-serif;
+	#background: blue;
+	background: black;
+	color: red;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+#content{
+	box-shadow: 1rem 1rem 1rem red;
+	border-radius: 2rem;
+	width: 50rem;
+	padding: 2rem;
+	margin: 10rem auto;
+	background: hsla(236, 81%, 18%, 0.98);
+	#background: black;
+}
+
+#header{
+	color: red;
+	text-decoration: underline;
+}
+
+#list{
+	color: black;
+}
+
+.ephone{
+	cursor: pointer;
+	#border: .1rem solid red;
+	border-radius: 0.5rem;
+	box-shadow: .1rem .1rem .2rem red;
+	#padding: 0.5rem;
+}
